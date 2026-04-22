@@ -15,7 +15,7 @@ module.exports = {
   		},
   		colors: {
   			red: {
-  				rhr: '#ef3340'
+  				rhr: '#ea1c2d'
   			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
