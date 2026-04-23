@@ -12,8 +12,8 @@ Thanks for your interest in contributing to QRScout! This guide will help you ge
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/FRC2713/QRScout.git
-cd QRScout
+git clone https://github.com/MECO-Robotics/QRScout_MECO.git
+cd QRScout_MECO
 ```
 
 ### 2. Install dependencies
@@ -50,7 +50,7 @@ To get a TBA API key:
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173/QRScout/`
+The app will be available at `http://localhost:5173/QRScout_MECO/`
 
 ## Available Commands
 
@@ -92,4 +92,4 @@ src/
 
 ## Questions?
 
-Open an issue on the [GitHub repository](https://github.com/FRC2713/QRScout/issues) if you have questions or run into problems.
+Open an issue on the [GitHub repository](https://github.com/MECO-Robotics/QRScout_MECO/issues) if you have questions or run into problems.
