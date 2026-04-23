@@ -1,95 +1,105 @@
 export function Logo() {
   return (
     <svg
-      viewBox="0 0 200 220"
+      viewBox="0 0 300 340"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Outer dark blue hexagon */}
-      <g>
-        {/* Hexagon shape */}
-        <path
-          d="M 100 10 L 150 40 L 150 120 L 100 150 L 50 120 L 50 40 Z"
-          fill="#003DA5"
-        />
+      <path
+        d="M 150 20 L 260 80 L 260 200 L 150 260 L 40 200 L 40 80 Z"
+        fill="#003DA5"
+        rx="20"
+      />
 
-        {/* Inner white hexagon with red border */}
-        <path
-          d="M 100 25 L 140 50 L 140 110 L 100 135 L 60 110 L 60 50 Z"
-          fill="white"
-          stroke="#C41E3A"
-          strokeWidth="3"
-        />
-      </g>
+      {/* Inner white hexagon with red border */}
+      <path
+        d="M 150 40 L 242 92 L 242 188 L 150 240 L 58 188 L 58 92 Z"
+        fill="white"
+        stroke="#C41E3A"
+        strokeWidth="5"
+        strokeLinejoin="round"
+      />
 
-      {/* Red rocket */}
-      <g>
-        {/* Rocket body (red) */}
-        <path
-          d="M 100 40 L 100 50 L 95 60 L 100 65 L 105 60 L 100 50 Z"
-          fill="#C41E3A"
-        />
-        {/* Rocket tip */}
-        <path
-          d="M 100 30 L 102 40 L 98 40 Z"
-          fill="#C41E3A"
-        />
-      </g>
+      {/* Red rocket body */}
+      <path
+        d="M 150 70 L 155 95 L 152 100 L 150 110 L 148 100 L 145 95 Z"
+        fill="#C41E3A"
+      />
 
-      {/* Gray/dark triangle below rocket */}
-      <g>
-        <path
-          d="M 95 65 L 100 75 L 105 65 Z"
-          fill="#808080"
-        />
-      </g>
+      {/* Rocket tip */}
+      <path
+        d="M 150 50 L 155 70 L 145 70 Z"
+        fill="#C41E3A"
+      />
 
-      {/* Red horizontal line */}
-      <g>
-        <line x1="70" y1="78" x2="130" y2="78" stroke="#C41E3A" strokeWidth="2" />
-      </g>
+      {/* Rocket fins */}
+      <path
+        d="M 145 100 L 140 120 L 148 110 Z"
+        fill="#C41E3A"
+      />
+      <path
+        d="M 155 100 L 160 120 L 152 110 Z"
+        fill="#C41E3A"
+      />
 
-      {/* TEAM text in red */}
+      {/* Gray triangle */}
+      <path
+        d="M 145 110 L 150 130 L 155 110 Z"
+        fill="#A9A9A9"
+      />
+
+      {/* Red curved line */}
+      <path
+        d="M 110 115 Q 150 100 190 115"
+        stroke="#C41E3A"
+        strokeWidth="4"
+        fill="none"
+        strokeLinecap="round"
+      />
+
+      {/* TEAM text */}
       <text
-        x="100"
-        y="95"
-        fontSize="16"
+        x="150"
+        y="155"
+        fontSize="28"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
         textAnchor="middle"
         fill="#C41E3A"
-        letterSpacing="2"
+        letterSpacing="4"
       >
         TEAM
       </text>
 
-      {/* MECO text in dark blue, larger */}
+      {/* MECO text */}
       <text
-        x="100"
-        y="118"
-        fontSize="32"
+        x="150"
+        y="195"
+        fontSize="56"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
+        fontStyle="italic"
         textAnchor="middle"
         fill="#003DA5"
-        letterSpacing="1"
+        letterSpacing="2"
       >
         MECO
       </text>
 
-      {/* Red underline below MECO */}
-      <line x1="70" y1="123" x2="130" y2="123" stroke="#C41E3A" strokeWidth="2" />
+      {/* Red line below MECO */}
+      <line x1="95" y1="205" x2="205" y2="205" stroke="#C41E3A" strokeWidth="4" strokeLinecap="round" />
 
-      {/* 8324 team number in red */}
+      {/* 8324 text */}
       <text
-        x="100"
-        y="140"
-        fontSize="18"
+        x="150"
+        y="235"
+        fontSize="32"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
         textAnchor="middle"
         fill="#C41E3A"
-        letterSpacing="2"
+        letterSpacing="3"
       >
         8324
       </text>
