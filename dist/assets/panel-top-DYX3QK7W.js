@@ -1,0 +1,1 @@
+import{c as t}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const o=t("PanelTop",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M3 9h18",key:"1pudct"}]]);export{o as default};

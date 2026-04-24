@@ -1,0 +1,1 @@
+import{c as e}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const o=e("SquareChevronDown",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m16 10-4 4-4-4",key:"894hmk"}]]);export{o as default};

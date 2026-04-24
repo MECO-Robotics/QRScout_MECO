@@ -1,0 +1,1 @@
+import{c as t}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const o=t("StretchHorizontal",[["rect",{width:"20",height:"6",x:"2",y:"4",rx:"2",key:"qdearl"}],["rect",{width:"20",height:"6",x:"2",y:"14",rx:"2",key:"1xrn6j"}]]);export{o as default};

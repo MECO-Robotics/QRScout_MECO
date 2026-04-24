@@ -1,0 +1,1 @@
+import{c as a}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const t=a("SquareParking",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M9 17V7h4a3 3 0 0 1 0 6H9",key:"1dfk2c"}]]);export{t as default};

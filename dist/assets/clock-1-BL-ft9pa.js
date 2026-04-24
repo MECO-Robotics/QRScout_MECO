@@ -1,0 +1,1 @@
+import{c}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const l=c("Clock1",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 14.5 8",key:"12zbmj"}]]);export{l as default};

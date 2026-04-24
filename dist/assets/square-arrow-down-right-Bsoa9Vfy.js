@@ -1,0 +1,1 @@
+import{c as t}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const o=t("SquareArrowDownRight",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m8 8 8 8",key:"1imecy"}],["path",{d:"M16 8v8H8",key:"1lbpgo"}]]);export{o as default};

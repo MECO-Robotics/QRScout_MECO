@@ -1,0 +1,1 @@
+import{c as e}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const o=e("Equal",[["line",{x1:"5",x2:"19",y1:"9",y2:"9",key:"1nwqeh"}],["line",{x1:"5",x2:"19",y1:"15",y2:"15",key:"g8yjpy"}]]);export{o as default};

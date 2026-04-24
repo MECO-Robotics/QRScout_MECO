@@ -1,0 +1,1 @@
+import{c as t}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const r=t("ArrowBigLeftDash",[["path",{d:"M19 15V9",key:"1hci5f"}],["path",{d:"M15 15h-3v4l-7-7 7-7v4h3v6z",key:"16tjna"}]]);export{r as default};
