@@ -1,16 +1,8 @@
-const SHEET_ID = import.meta.env.VITE_GOOGLE_SHEETS_ID;
-const API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY;
+const SCRIPT_URL = 'https://script.googleapis.com/macros/s/AKfycbwhWVN-NZES4GrHK35p2o_T5O3IHfmN8BrX2THR0jF6QauLXiKN5HCSVUpPiQ42TkZUSQ/exec';
 
 export async function appendToGoogleSheet(
   fieldValues: { code: string; value: any }[]
 ): Promise<{ success: boolean; error?: string }> {
-  if (!SHEET_ID || !API_KEY) {
-    return {
-      success: false,
-      error: 'Google Sheets configuration missing. Please set VITE_GOOGLE_SHEETS_ID and VITE_GOOGLE_SHEETS_API_KEY in your .env file.',
-    };
-  }
-
   try {
     // Prepare the values - add timestamp and then all field values
     const timestamp = new Date().toISOString();
@@ -27,23 +19,15 @@ export async function appendToGoogleSheet(
       }),
     ];
 
-    const response = await fetch(
-      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1!A:Z:append?key=${API_KEY}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          values: [values],
-          majorDimension: 'ROWS',
-        }),
-      }
-    );
+    const response = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify(values),
+    });
 
-    if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.error?.message || 'Failed to append to sheet');
+    const result = await response.json();
+
+    if (!result.success) {
+      throw new Error(result.error || 'Failed to append to sheet');
     }
 
     return { success: true };

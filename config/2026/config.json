@@ -406,7 +406,7 @@
           "required": true,
           "code": "yc",
           "formResetBehavior": "reset",
-          "defaultValue": "",
+          "defaultValue": "No Card",
           "choices": {
             "No Card": "No Card",
             "Yellow": "Yellow Card",
