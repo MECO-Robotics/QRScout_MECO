@@ -1,6 +1,5 @@
-# NOTE
-
-We changed to github pages. Please use https://frc2713.github.io/QRScout/ until we redirect http://scout.redhawkrobotics.org
+> QRScout is deployed on GitHub Pages.
+> Live site: https://meco-robotics.github.io/QRScout_MECO/
 
 # QRScout
 
@@ -9,6 +8,7 @@ A QR Code-based scouting system for FRC
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+- [Development](#development)
 - [Using QRScout](#using-qrscout)
   - [Hosting a Custom JSON Config](#hosting-a-custom-json-config-for-your-team)
 - [config.json](#configjson)
@@ -22,30 +22,44 @@ A QR Code-based scouting system for FRC
   - [Using Action Tracker Input](#using-action-tracker-input)
   - [Using The Blue Alliance (TBA) Integration](#using-the-blue-alliance-tba-integration)
 
-## Getting started
+## Getting Started
 
-QRScout is a web app. To open it, all 3you have to do is visit https://frc2713.github.io/QRScout/
+QRScout is a web app. To open it, visit https://meco-robotics.github.io/QRScout_MECO/.
 
-QRScout takes in form data inputed durring a FRC match about the robots playing it, and outputs a QR code with all of that data, in a list seperated by default by tabs. The QR code generated can then be scanned and inputted into something like a Microsoft Excel or Google Sheets spreadsheet, and analyzed.
+QRScout collects scouting data during an FRC match and turns it into a QR code with the form values joined into a delimited list. The code can then be scanned into tools like Microsoft Excel or Google Sheets for analysis.
+
+## Development
+
+QRScout uses Vite, so local development is straightforward:
+
+1. Install dependencies with `npm install`.
+2. Start the dev server with `npm run dev`.
+3. Open the local URL printed in the terminal, usually `http://localhost:5173/`.
+
+Useful scripts:
+
+- `npm run build` type-checks the app and produces a production build in `dist/`.
+- `npm run preview` serves the production build locally after a build.
+- `npm run deploy` builds the app and publishes `dist/` to GitHub Pages.
 
 ## Using QRScout
 
-When you visit QRScout, you're shown a screen that looks something like
+When you visit QRScout, you're shown a screen that looks something like this:
 ![The QRScout homepage](src/assets/images/main_screen.png)
-At the top, and taking up most of the page, are form fields. These are the input for the data that will later be made into a QRCode.
+At the top of the page are the form fields used to capture scouting data.
 
-Some of these fields are required, and others aren't. QRScout will refuse to let you submit the form until all of the required fields are filled out.
+Some of these fields are required and others are optional. QRScout will not let you submit the form until every required field is filled out.
 
 ![The bottom of the QRScout homepage](src/assets/images/main_screen_bottom.png)
-Down at the bottom of the page, there are the Commit and Reset Form buttons. The Commit button will generate a QR code of the form data that you filled out above, and display this onscreen to be scanned, alongside the text that is encoded in the QR code. The Reset Form button resets most of the form fields, so that it can be used again without havng to reload the page. It does not reset most of the Prematch column, as most of this data can be reused from match to match.
+Down at the bottom of the page are the Commit and Reset Form buttons. The Commit button generates a QR code from the form data you entered above and shows it on screen alongside the encoded text. The Reset Form button resets most of the form fields so it can be used again without reloading the page. It does not reset most of the Prematch column because that data is often reused from match to match.
 
-There are also the Copy Column Names and Edit Config buttons. Clicking Copy Column Names will do what it suggests, and copy the names of each column to your clipboard. The Edit Config button leads you to the `config.json` editor. The three buttons beneath this are used to change from light to dark mode, and set the page to your system theme (the default).
+There are also the Copy Column Names and Edit Config buttons. Clicking Copy Column Names copies the names of each column to your clipboard. The Edit Config button opens the `config.json` editor. The three buttons beneath this switch between light mode, dark mode, and your system theme, which is the default.
 
-> The line delimiter in the text alongside the QRCode is always a comma, regardless of what it set to. In the data in the QRCode and optionally copied to your clipboard, it will be what you have set it to.
+> The text shown alongside the QR code always uses commas for readability. The encoded payload and optional clipboard copy use the delimiter you configured.
 
 Clicking on Edit Config leads you to the following screen:
 ![The config editor](src/assets/images/editor_screen.png)
-The text editor allows you to edit the `config.json` file (see below). Click the Save button to save any changes you make.
+The text editor allows you to edit the `config.json` file described below. Click Save after making changes.
 
 Once you create a custom `config.json` file for your team, there are 2 ways to leverage it in competition:
 
@@ -73,21 +87,29 @@ You can now use this URL to load the JSON config in QRScout.
 
 ## config.json
 
-The config.json file is what configures the form fields for QRScout, the page title, the title at the top of your screen, and the line delimiter used in the QRCode.
+The `config.json` file controls the form layout, page title, team metadata, theme, and the delimiter used in the QR code.
 
-The config.json can be edited to change most parts of QRScout, and change the line delimiter character used by the QRCode.
+The `config.json` file can be edited to change most parts of QRScout, including the line delimiter used by the QR code.
 
 The basic structure of the config.json file is as follows:
 
 ### Root:
 
-`$schema`: A reference to the schema used by the config.json file. This shouldn't be changed from the default "../schema.json".
+`$schema`: A reference to the schema used by the `config.json` file. When you include it, point it at the published schema URL.
 
-`title`: The title of the page. This is what appears in the tab bar.
+`title`: The title of the page. This appears in the browser tab.
 
 `page_title`: The title that appears at the top of the QRScout page.
 
-`delimiter`: The line delimiter used by the QR code
+`year`: The season year this config is meant for. If omitted, the app defaults to the current year.
+
+`delimiter`: The delimiter used when joining the exported form values.
+
+`teamNumber`: The team number using this scouting form.
+
+`floatingField`: An optional floating text box at the top of the page. This is useful for showing always-visible values on smaller screens.
+
+`theme`: Optional light and dark theme tokens.
 
 `sections`: An array of sections/columns that hold and organize form inputs
 
@@ -103,19 +125,19 @@ The basic structure of the config.json file is as follows:
 
 `type`: One of "text", "number", "boolean", "range", "select", "counter", "multi-counter", "timer", "multi-select", "image", "action-tracker", "TBA-team-and-robot", or "TBA-match-number". Describes the type of input this is.
 
-`required`: a boolean indicating if this must be filled out before the QRCode is generated. If any field with this set to true is not filled out, QRScout will not generate a QRCode when the commit button is pressed.
+`required`: a boolean indicating if this must be filled out before the QR code is generated. If any field with this set to true is not filled out, QRScout will not generate a QR code when the commit button is pressed.
 
-`code`: camelCase string with a unique name indicaing what this field is.
+`code`: camelCase string with a unique name indicating what this field is.
 
-`disabled`: Boolean indicating if this field is disabled. If it is, things cannot be inputted into it. This and the requied value are mutually exclusive if you want people to be able to submit this form.
+`disabled`: Boolean indicating if this field is disabled. If it is, users cannot input into it. This and the required value are mutually exclusive if you want people to be able to submit this form.
 
 `formResetBehavior`: One of "reset", "preserve", or "increment".
 
-- `reset` will reset the field whenver the form resets
+- `reset` will reset the field whenever the form resets
 - `preserve` will retain the current value
 - `increment` will increment the value based on the field's settings
 
-`choices`: An object containng numbered keys mapping to values that this can hold. For example:
+`choices`: An object containing numbered keys mapping to values that this can hold. For example:
 
 ```json
 "choices": {
@@ -124,7 +146,7 @@ The basic structure of the config.json file is as follows:
 }
 ```
 
-For "multiselect" type fields, these choices represent the available options that can be selected.
+For `"multi-select"` type fields, these choices represent the available options that can be selected.
 
 `defaultValue`: The default value of this field.
 
@@ -139,7 +161,7 @@ To configure a multi-select field in your `config.json`:
 ```json
 {
   "title": "Robot Capabilities",
-  "type": "multiselect",
+  "type": "multi-select",
   "required": false,
   "code": "robotCapabilities",
   "choices": {
