@@ -1,4 +1,4 @@
-import { Info, TriangleAlert } from 'lucide-react';
+import { Info } from 'lucide-react';
 import React from 'react';
 import { Card, CardContent } from '../ui/card';
 import {
@@ -23,11 +23,17 @@ export default function InputCard(
     <Card>
       <div className="flex justify-between bg-secondary px-1 items-center rounded-t-xl">
         <div className="flex gap-2 ">
-          {props.required && !props.hasValue && (
-            <TriangleAlert className="text-primary animate-pulse size-4" />
-          )}
           <h1 className="capitalize text-secondary-foreground text-sm">
             {props.title.toUpperCase()}
+            {props.required && (
+              <span
+                className="ml-1 font-semibold text-primary"
+                aria-label="Required field"
+                title="Required"
+              >
+                *
+              </span>
+            )}
           </h1>
         </div>
         {props.description && (

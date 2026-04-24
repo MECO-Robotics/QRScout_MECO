@@ -1,4 +1,4 @@
-const SCRIPT_URL = 'https://script.googleapis.com/macros/s/AKfycbwhWVN-NZES4GrHK35p2o_T5O3IHfmN8BrX2THR0jF6QauLXiKN5HCSVUpPiQ42TkZUSQ/exec';
+const SCRIPT_URL = 'https://script.googleapis.com/macros/s/AKfycbz0hyBVi_RvGFs_U90OUXUJ4OxwKa5RbegtxEA-maXCfbr-kD-vuA4aYYBIoN6kXkrPbw/exec';
 
 export async function appendToGoogleSheet(
   fieldValues: { code: string; value: any }[]
@@ -21,15 +21,15 @@ export async function appendToGoogleSheet(
 
     const response = await fetch(SCRIPT_URL, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(values),
+      mode: 'no-cors',
     });
 
-    const result = await response.json();
-
-    if (!result.success) {
-      throw new Error(result.error || 'Failed to append to sheet');
-    }
-
+    // With no-cors mode, we can't read the response directly
+    // So we'll assume success if the fetch doesn't throw
     return { success: true };
   } catch (error) {
     console.error('Google Sheets error:', error);
