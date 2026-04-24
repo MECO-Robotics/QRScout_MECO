@@ -1,1 +1,0 @@
-import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=e("PanelLeft",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M9 3v18",key:"fh3hqa"}]]);export{r as default};

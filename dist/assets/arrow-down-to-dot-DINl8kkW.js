@@ -1,1 +1,0 @@
-import{c as o}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const e=o("ArrowDownToDot",[["path",{d:"M12 2v14",key:"jyx4ut"}],["path",{d:"m19 9-7 7-7-7",key:"1oe3oy"}],["circle",{cx:"12",cy:"21",r:"1",key:"o0uj5v"}]]);export{e as default};

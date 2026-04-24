@@ -1,1 +1,0 @@
-import{c as r}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=r("ArrowBigUpDash",[["path",{d:"M9 19h6",key:"456am0"}],["path",{d:"M9 15v-3H5l7-7 7 7h-4v3H9z",key:"1r2uve"}]]);export{o as default};

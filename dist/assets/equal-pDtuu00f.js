@@ -1,1 +1,0 @@
-import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=e("Equal",[["line",{x1:"5",x2:"19",y1:"9",y2:"9",key:"1nwqeh"}],["line",{x1:"5",x2:"19",y1:"15",y2:"15",key:"g8yjpy"}]]);export{o as default};

@@ -1,1 +1,0 @@
-import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=t("Columns2",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M12 3v18",key:"108xh3"}]]);export{r as default};

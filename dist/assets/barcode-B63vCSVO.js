@@ -1,0 +1,1 @@
+import{c as e}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const d=e("Barcode",[["path",{d:"M3 5v14",key:"1nt18q"}],["path",{d:"M8 5v14",key:"1ybrkv"}],["path",{d:"M12 5v14",key:"s699le"}],["path",{d:"M17 5v14",key:"ycjyhj"}],["path",{d:"M21 5v14",key:"nzette"}]]);export{d as default};

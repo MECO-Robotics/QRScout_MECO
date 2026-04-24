@@ -1,0 +1,1 @@
+import{c}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const i=c("CircleDot",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}]]);export{i as default};

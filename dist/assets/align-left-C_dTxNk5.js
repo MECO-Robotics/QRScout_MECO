@@ -1,0 +1,1 @@
+import{c as t}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const o=t("AlignLeft",[["path",{d:"M15 12H3",key:"6jk70r"}],["path",{d:"M17 18H3",key:"1amg6g"}],["path",{d:"M21 6H3",key:"1jwq7v"}]]);export{o as default};

@@ -1,0 +1,1 @@
+import{c as t}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const m=t("ChevronsRight",[["path",{d:"m6 17 5-5-5-5",key:"xnjwq"}],["path",{d:"m13 17 5-5-5-5",key:"17xmmf"}]]);export{m as default};

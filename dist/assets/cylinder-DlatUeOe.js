@@ -1,1 +1,0 @@
-import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const c=e("Cylinder",[["ellipse",{cx:"12",cy:"5",rx:"9",ry:"3",key:"msslwz"}],["path",{d:"M3 5v14a9 3 0 0 0 18 0V5",key:"aqi0yr"}]]);export{c as default};

@@ -1,0 +1,1 @@
+import{c as e}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const a=e("GalleryVertical",[["path",{d:"M3 2h18",key:"15qxfx"}],["rect",{width:"18",height:"12",x:"3",y:"6",rx:"2",key:"1439r6"}],["path",{d:"M3 22h18",key:"8prr45"}]]);export{a as default};

@@ -1,0 +1,1 @@
+import{c}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const l=c("Clock11",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 9.5 8",key:"l5bg6f"}]]);export{l as default};

@@ -18,9 +18,25 @@ async function tryLoadDevEntry() {
 }
 
 function findBuiltEntry(manifest) {
+  const htmlEntry = manifest["index.html"];
+  const htmlDynamicEntry = htmlEntry?.dynamicImports
+    ?.map((entryKey) => manifest[entryKey])
+    .find((entry) => {
+      const file = entry?.file;
+      return (
+        typeof file === "string" &&
+        (entry.name === "main" ||
+          entry.src === "src/main.tsx" ||
+          file.includes("/main-"))
+      );
+    });
+
+  if (htmlDynamicEntry) {
+    return htmlDynamicEntry;
+  }
+
   const directEntries = [
     manifest["src/main.tsx"],
-    manifest["index.html"],
     manifest["dist/assets/app.js"],
   ].filter(Boolean);
 
@@ -39,6 +55,23 @@ function findBuiltEntry(manifest) {
   );
 }
 
+function loadEntryStyles(entry, assetBaseUrl) {
+  const cssFiles = Array.isArray(entry.css) ? entry.css : [];
+
+  for (const cssFile of cssFiles) {
+    const href = new URL(cssFile, assetBaseUrl).href;
+    const existingLink = document.querySelector(`link[href="${href}"]`);
+    if (existingLink) {
+      continue;
+    }
+
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+  }
+}
+
 async function loadBuiltEntry() {
   for (const { manifest: manifestPath, assetBase } of MANIFEST_PATHS) {
     try {
@@ -53,7 +86,10 @@ async function loadBuiltEntry() {
         continue;
       }
 
-      await import(/* @vite-ignore */ `${assetBase}${entry.file}`);
+      const assetBaseUrl = new URL(assetBase, document.baseURI);
+      loadEntryStyles(entry, assetBaseUrl);
+
+      await import(/* @vite-ignore */ new URL(entry.file, assetBaseUrl).href);
       return true;
     } catch {
       // Try the next deployment layout.

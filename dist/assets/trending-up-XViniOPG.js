@@ -1,0 +1,1 @@
+import{c as e}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const i=e("TrendingUp",[["polyline",{points:"22 7 13.5 15.5 8.5 10.5 2 17",key:"126l90"}],["polyline",{points:"16 7 22 7 22 13",key:"kwv8wd"}]]);export{i as default};

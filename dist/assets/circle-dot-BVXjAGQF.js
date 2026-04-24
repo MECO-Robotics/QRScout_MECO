@@ -1,1 +1,0 @@
-import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const i=c("CircleDot",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}]]);export{i as default};

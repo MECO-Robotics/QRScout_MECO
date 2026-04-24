@@ -1,1 +1,0 @@
-import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=t("PanelTop",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M3 9h18",key:"1pudct"}]]);export{o as default};

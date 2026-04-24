@@ -1,0 +1,1 @@
+import{c as e}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const r=e("SquareEqual",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M7 10h10",key:"1101jm"}],["path",{d:"M7 14h10",key:"1mhdw3"}]]);export{r as default};

@@ -1,1 +1,0 @@
-import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const c=t("Ungroup",[["rect",{width:"8",height:"6",x:"5",y:"4",rx:"1",key:"nzclkv"}],["rect",{width:"8",height:"6",x:"11",y:"14",rx:"1",key:"4tytwb"}]]);export{c as default};
