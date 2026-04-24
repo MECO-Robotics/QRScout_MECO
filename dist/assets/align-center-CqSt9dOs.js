@@ -1,1 +1,0 @@
-import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=e("AlignCenter",[["path",{d:"M17 12H7",key:"16if0g"}],["path",{d:"M19 18H5",key:"18s9l3"}],["path",{d:"M21 6H3",key:"1jwq7v"}]]);export{r as default};

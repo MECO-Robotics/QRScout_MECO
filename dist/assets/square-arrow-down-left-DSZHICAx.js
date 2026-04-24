@@ -1,0 +1,1 @@
+import{c as e}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const o=e("SquareArrowDownLeft",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m16 8-8 8",key:"166keh"}],["path",{d:"M16 16H8V8",key:"1w2ppm"}]]);export{o as default};

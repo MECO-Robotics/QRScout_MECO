@@ -1,0 +1,1 @@
+import{c as r}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const o=r("ArrowBigRightDash",[["path",{d:"M5 9v6",key:"158jrl"}],["path",{d:"M9 9h3V5l7 7-7 7v-4H9V9z",key:"1sg2xn"}]]);export{o as default};

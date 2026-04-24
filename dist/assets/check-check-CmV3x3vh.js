@@ -1,1 +1,0 @@
-import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const k=e("CheckCheck",[["path",{d:"M18 6 7 17l-5-5",key:"116fxf"}],["path",{d:"m22 10-7.5 7.5L13 16",key:"ke71qq"}]]);export{k as default};

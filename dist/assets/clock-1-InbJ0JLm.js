@@ -1,1 +1,0 @@
-import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const l=c("Clock1",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 14.5 8",key:"12zbmj"}]]);export{l as default};

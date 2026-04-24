@@ -1,1 +1,0 @@
-import{c as a}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const t=a("MoveDiagonal",[["path",{d:"M11 19H5v-6",key:"8awifj"}],["path",{d:"M13 5h6v6",key:"7voy1q"}],["path",{d:"M19 5 5 19",key:"wwaj1z"}]]);export{t as default};

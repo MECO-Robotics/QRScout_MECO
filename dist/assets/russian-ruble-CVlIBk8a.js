@@ -1,0 +1,1 @@
+import{c as a}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const s=a("RussianRuble",[["path",{d:"M6 11h8a4 4 0 0 0 0-8H9v18",key:"18ai8t"}],["path",{d:"M6 15h8",key:"1y8f6l"}]]);export{s as default};

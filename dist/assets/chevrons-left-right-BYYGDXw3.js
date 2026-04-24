@@ -1,1 +1,0 @@
-import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const a=t("ChevronsLeftRight",[["path",{d:"m9 7-5 5 5 5",key:"j5w590"}],["path",{d:"m15 7 5 5-5 5",key:"1bl6da"}]]);export{a as default};

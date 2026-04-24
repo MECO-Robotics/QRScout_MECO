@@ -1,0 +1,1 @@
+import{c as r}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const t=r("ArrowUpFromLine",[["path",{d:"m18 9-6-6-6 6",key:"kcunyi"}],["path",{d:"M12 3v14",key:"7cf3v8"}],["path",{d:"M5 21h14",key:"11awu3"}]]);export{t as default};

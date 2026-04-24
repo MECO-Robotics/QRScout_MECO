@@ -1,0 +1,1 @@
+import{c as r}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const o=r("CircleArrowOutUpLeft",[["path",{d:"M2 8V2h6",key:"hiwtdz"}],["path",{d:"m2 2 10 10",key:"1oh8rs"}],["path",{d:"M12 2A10 10 0 1 1 2 12",key:"rrk4fa"}]]);export{o as default};

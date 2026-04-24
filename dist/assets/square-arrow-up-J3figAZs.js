@@ -1,0 +1,1 @@
+import{c as r}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const a=r("SquareArrowUp",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m16 12-4-4-4 4",key:"177agl"}],["path",{d:"M12 16V8",key:"1sbj14"}]]);export{a as default};

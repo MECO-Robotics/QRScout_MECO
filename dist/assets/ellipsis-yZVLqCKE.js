@@ -1,0 +1,1 @@
+import{c}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const r=c("Ellipsis",[["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}],["circle",{cx:"19",cy:"12",r:"1",key:"1wjl8i"}],["circle",{cx:"5",cy:"12",r:"1",key:"1pcz8c"}]]);export{r as default};

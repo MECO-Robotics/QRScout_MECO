@@ -1,1 +1,0 @@
-import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=t("SquareArrowDownRight",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m8 8 8 8",key:"1imecy"}],["path",{d:"M16 8v8H8",key:"1lbpgo"}]]);export{o as default};

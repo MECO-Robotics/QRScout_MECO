@@ -1,0 +1,1 @@
+import{c as t}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const r=t("ChevronsRightLeft",[["path",{d:"m20 17-5-5 5-5",key:"30x0n2"}],["path",{d:"m4 17 5-5-5-5",key:"16spf4"}]]);export{r as default};

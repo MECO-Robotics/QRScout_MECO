@@ -1,0 +1,1 @@
+import{c as t}from"./main-CUWn-GOh.js";import"./index-Bi89c5sE.js";const i=t("PanelRight",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M15 3v18",key:"14nvp0"}]]);export{i as default};
