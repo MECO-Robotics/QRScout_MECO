@@ -1,9 +1,16 @@
-const SHEET_ID = '1KVgrjiXAyfRWLwvgZzVrhMDXPoR3g5oFiuYiZ24E1HE';
-const API_KEY = 'AIzaSyCDKnXvvqXwb_vRuPX8lesvbcS4X6EPXsY';
+const SHEET_ID = import.meta.env.VITE_GOOGLE_SHEETS_ID;
+const API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY;
 
 export async function appendToGoogleSheet(
   fieldValues: { code: string; value: any }[]
 ): Promise<{ success: boolean; error?: string }> {
+  if (!SHEET_ID || !API_KEY) {
+    return {
+      success: false,
+      error: 'Google Sheets configuration missing. Please set VITE_GOOGLE_SHEETS_ID and VITE_GOOGLE_SHEETS_API_KEY in your .env file.',
+    };
+  }
+
   try {
     // Prepare the values - add timestamp and then all field values
     const timestamp = new Date().toISOString();
