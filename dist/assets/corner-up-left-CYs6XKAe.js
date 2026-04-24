@@ -1,0 +1,1 @@
+import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=e("CornerUpLeft",[["polyline",{points:"9 14 4 9 9 4",key:"881910"}],["path",{d:"M20 20v-7a4 4 0 0 0-4-4H4",key:"1nkjon"}]]);export{r as default};

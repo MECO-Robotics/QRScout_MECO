@@ -1,1 +1,0 @@
-import{c as t}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const r=t("SquarePlay",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"m9 8 6 4-6 4Z",key:"f1r3lt"}]]);export{r as default};

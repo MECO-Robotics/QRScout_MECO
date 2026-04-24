@@ -1,1 +1,0 @@
-import{c as o}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const p=o("ChevronsUpDown",[["path",{d:"m7 15 5 5 5-5",key:"1hf1tw"}],["path",{d:"m7 9 5-5 5 5",key:"sgt6xg"}]]);export{p as default};

@@ -1,1 +1,0 @@
-import{c as e}from"./main-CCRekaEI.js";import"./index-ByQngsrY.js";const t=e("ArrowLeftToLine",[["path",{d:"M3 19V5",key:"rwsyhb"}],["path",{d:"m13 6-6 6 6 6",key:"1yhaz7"}],["path",{d:"M7 12h14",key:"uoisry"}]]);export{t as default};

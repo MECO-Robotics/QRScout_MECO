@@ -1,0 +1,1 @@
+import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=c("Eclipse",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"M12 2a7 7 0 1 0 10 10",key:"1yuj32"}]]);export{r as default};

@@ -1,0 +1,1 @@
+import{c as o}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const t=o("ArrowUpFromDot",[["path",{d:"m5 9 7-7 7 7",key:"1hw5ic"}],["path",{d:"M12 16V2",key:"ywoabb"}],["circle",{cx:"12",cy:"21",r:"1",key:"o0uj5v"}]]);export{t as default};

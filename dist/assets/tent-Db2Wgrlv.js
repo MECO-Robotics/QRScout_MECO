@@ -1,0 +1,1 @@
+import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const d=t("Tent",[["path",{d:"M3.5 21 14 3",key:"1szst5"}],["path",{d:"M20.5 21 10 3",key:"1310c3"}],["path",{d:"M15.5 21 12 15l-3.5 6",key:"1ddtfw"}],["path",{d:"M2 21h20",key:"1nyx9w"}]]);export{d as default};
