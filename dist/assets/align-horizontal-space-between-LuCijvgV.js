@@ -1,0 +1,1 @@
+import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const i=e("AlignHorizontalSpaceBetween",[["rect",{width:"6",height:"14",x:"3",y:"5",rx:"2",key:"j77dae"}],["rect",{width:"6",height:"10",x:"15",y:"7",rx:"2",key:"bq30hj"}],["path",{d:"M3 2v20",key:"1d2pfg"}],["path",{d:"M21 2v20",key:"p059bm"}]]);export{i as default};

@@ -1,0 +1,1 @@
+import{c as t}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=t("AlignLeft",[["path",{d:"M15 12H3",key:"6jk70r"}],["path",{d:"M17 18H3",key:"1amg6g"}],["path",{d:"M21 6H3",key:"1jwq7v"}]]);export{o as default};

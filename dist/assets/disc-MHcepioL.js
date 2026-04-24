@@ -1,0 +1,1 @@
+import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const i=c("Disc",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]]);export{i as default};

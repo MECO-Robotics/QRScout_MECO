@@ -1,0 +1,1 @@
+import{c as o}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const a=o("ArrowBigDownDash",[["path",{d:"M15 5H9",key:"1tp3ed"}],["path",{d:"M15 9v3h4l-7 7-7-7h4V9z",key:"ncdc4b"}]]);export{a as default};

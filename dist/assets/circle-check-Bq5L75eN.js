@@ -1,0 +1,1 @@
+import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const m=c("CircleCheck",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]]);export{m as default};

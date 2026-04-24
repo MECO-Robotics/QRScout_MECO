@@ -1,0 +1,1 @@
+import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=e("MessageCircleCode",[["path",{d:"M10 9.5 8 12l2 2.5",key:"3mjy60"}],["path",{d:"m14 9.5 2 2.5-2 2.5",key:"1bir2l"}],["path",{d:"M7.9 20A9 9 0 1 0 4 16.1L2 22z",key:"k85zhp"}]]);export{o as default};

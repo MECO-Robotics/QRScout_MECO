@@ -1,0 +1,1 @@
+import{c}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const i=c("DiscAlbum",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["circle",{cx:"12",cy:"12",r:"5",key:"nd82uf"}],["path",{d:"M12 12h.01",key:"1mp3jc"}]]);export{i as default};

@@ -1,0 +1,1 @@
+import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=e("SquarePlus",[["rect",{width:"18",height:"18",x:"3",y:"3",rx:"2",key:"afitv7"}],["path",{d:"M8 12h8",key:"1wcyev"}],["path",{d:"M12 8v8",key:"napkw2"}]]);export{r as default};

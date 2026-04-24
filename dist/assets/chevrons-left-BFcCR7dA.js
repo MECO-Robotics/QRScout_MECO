@@ -1,0 +1,1 @@
+import{c as e}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const o=e("ChevronsLeft",[["path",{d:"m11 17-5-5 5-5",key:"13zhaf"}],["path",{d:"m18 17-5-5 5-5",key:"h8a8et"}]]);export{o as default};

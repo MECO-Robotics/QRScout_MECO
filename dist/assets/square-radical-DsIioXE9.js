@@ -1,0 +1,1 @@
+import{c as a}from"./main-yE92G-3R.js";import"./index-xp2w8CbZ.js";const r=a("SquareRadical",[["path",{d:"M7 12h2l2 5 2-10h4",key:"1fxv6h"}],["rect",{x:"3",y:"3",width:"18",height:"18",rx:"2",key:"h1oib"}]]);export{r as default};
