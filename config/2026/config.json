@@ -2,7 +2,7 @@
   "title": "QRScout",
   "page_title": "TEAM 8324",
   "delimiter": "\t",
-  "teamNumber": 2713,
+  "teamNumber": 8324,
   "floatingField": {
     "show": false,
     "codeValue": "teamNumber"
@@ -127,11 +127,19 @@
         {
           "title": "Fuel Scored",
           "description": "Approximate fuel scored during autonomous.",
-          "type": "multi-counter",
+          "type": "select",
           "required": false,
           "code": "autoFuelScored",
           "formResetBehavior": "reset",
-          "defaultValue": 0
+          "defaultValue": "",
+          "choices": {
+            "1-10": "1-10",
+            "11-25": "11-25",
+            "26-50": "26-50",
+            "50-75": "50-75",
+            "75-100": "75-100",
+            "100+": "100+"
+          }
         },
         {
           "title": "Where Collected Fuel",
@@ -163,7 +171,7 @@
           }
         },
         {
-          "title": "Robot Stuck or Astop in Auto?",
+          "title": "Robot Stuck or A Stop in Auto?",
           "description": "Did robot get stuck in Auto or have to be Astopped?",
           "type": "boolean",
           "required": false,
@@ -191,35 +199,21 @@
       "name": "Teleop",
       "fields": [
         {
-          "title": "Actions",
-          "description": "Track actions performed during teleop.",
-          "type": "action-tracker",
-          "required": false,
-          "code": "teleopActions",
-          "formResetBehavior": "reset",
-          "defaultValue": null,
-          "mode": "hold",
-          "actions": [
-            {
-              "label": "Faffing & Stuck",
-              "code": "faffing"
-            },
-            {
-              "label": "Defense",
-              "code": "defense"
-            }
-          ],
-          "timerDuration": 135,
-          "autoStopSeconds": 150
-        },
-        {
           "title": "Fuel Scored",
           "description": "Approximate fuel scored during teleop.",
-          "type": "multi-counter",
+          "type": "select",
           "required": false,
           "code": "teleopFuelScored",
           "formResetBehavior": "reset",
-          "defaultValue": 0
+          "defaultValue": "",
+          "choices": {
+            "1-10": "1-10",
+            "11-25": "11-25",
+            "26-50": "26-50",
+            "50-75": "50-75",
+            "75-100": "75-100",
+            "100+": "100+"
+          }
         },
         {
           "title": "Bump / Trench",
@@ -245,11 +239,19 @@
         {
           "title": "Fuel Fed (Herded & Passed)",
           "description": "Approximate fuel fed either by shooter or bumper herding during teleop.",
-          "type": "multi-counter",
+          "type": "select",
           "required": false,
           "code": "teleopFuelFed",
           "formResetBehavior": "reset",
-          "defaultValue": 0
+          "defaultValue": "",
+          "choices": {
+            "1-10": "1-10",
+            "11-25": "11-25",
+            "26-50": "26-50",
+            "50-75": "50-75",
+            "75-100": "75-100",
+            "100+": "100+"
+          }
         },
         {
           "title": "Opposing Zone Actions",
@@ -412,7 +414,7 @@
           }
         },
         {
-          "title": "Would you put this robot on our second pick (scoring) pick list?",
+          "title": "Would you put this robot on our first pick (scoring) pick list?",
           "description": "A quick reference to use in conjuction with quantitative data at scouting meeting",
           "type": "select",
           "required": false,
@@ -426,7 +428,7 @@
           }
         },
         {
-          "title": "Would you put this robot on our a third pick (passing/defense) pick list?",
+          "title": "Would you put this robot on our second pick (passing/defense) pick list?",
           "description": "A quick reference to use in conjuction with quantitative data at scouting meeting",
           "type": "select",
           "required": false,
