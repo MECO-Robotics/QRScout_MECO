@@ -13,6 +13,8 @@ import { createStore } from './createStore';
 
 export type { Result };
 
+const CONFIG_STORAGE_VERSION = 10;
+
 /**
  * Generates field values for a config, including dynamic fields for action-tracker inputs.
  * For action-tracker, creates _count and _times fields for each action.
@@ -79,7 +81,8 @@ export const useQRScoutState = createStore<QRScoutState>(
   initialState,
   'qrScout',
   {
-    version: 9,
+    version: CONFIG_STORAGE_VERSION,
+    migrate: () => initialState,
   },
 );
 

@@ -6,6 +6,8 @@ on:
 
 env:
   VITE_STATSIG_CLIENT_KEY: client-FccOCTznRdYyGr7cx3vJoyoWyO1BTqBzv6S2g1lYPvB
+  VITE_TBA_API_KEY: ${{ secrets.VITE_TBA_API_KEY || secrets.TBA_API_KEY }}
+  VITE_GOOGLE_APPS_SCRIPT_URL: ${{ vars.VITE_GOOGLE_APPS_SCRIPT_URL || secrets.VITE_GOOGLE_APPS_SCRIPT_URL }}
 
 concurrency: preview-${{ github.ref }}
 
@@ -13,10 +15,16 @@ jobs:
   deploy-preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
