@@ -1,4 +1,6 @@
-const SCRIPT_URL = 'https://script.googleapis.com/macros/s/AKfycbz0hyBVi_RvGFs_U90OUXUJ4OxwKa5RbegtxEA-maXCfbr-kD-vuA4aYYBIoN6kXkrPbw/exec';
+const SCRIPT_URL =
+  import.meta.env.VITE_GOOGLE_APPS_SCRIPT_URL ||
+  'https://script.google.com/macros/s/AKfycbyoo45v9awPvH1U3xwKGgtZFWw8IT6vaEiyA27uvmFVFhB0MTDQaxROEM97cN2aqGrl-w/exec';
 
 export async function appendToGoogleSheet(
   fieldValues: { code: string; value: any }[]
@@ -19,7 +21,7 @@ export async function appendToGoogleSheet(
       }),
     ];
 
-    const response = await fetch(SCRIPT_URL, {
+    await fetch(SCRIPT_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
